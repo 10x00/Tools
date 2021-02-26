@@ -28,11 +28,4 @@ for i,v in pairs(workspace:GetDescendants()) do
        MakeConnection(v)
    end
 end
-
-workspace.DescendantAdded:Connect(function(Child)
-   local Hum = Child:FindFirstChild("Humanoid") or Child:WaitForChild("Humanoid", 10)
-   if Hum then
-       MakeConnection(Child)
-   end
-end)
 -- End --
