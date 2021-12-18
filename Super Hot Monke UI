@@ -824,7 +824,7 @@ minimize.MouseButton1Click:Connect(function()
 end)
 
 uis.InputBegan:Connect(function(k)
-	if k.KeyCode==Enum.KeyCode.Insert then
+	if k.KeyCode==Enum.KeyCode.LeftAlt then
 		Monke.Enabled=not Monke.Enabled
 	end
 end)
