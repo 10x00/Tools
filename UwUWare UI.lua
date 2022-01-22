@@ -1,4 +1,5 @@
 local library = {flags = {}, windows = {}, open = true}
+protect_gui = syn and syn.protect_gui or function() end
 
 --Services
 local runService = game:GetService"RunService"
